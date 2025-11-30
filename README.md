@@ -30,7 +30,7 @@ Collection of LeetCode questions to ace the coding interview!
 ## Sliding Window (8 problems)
 | Problem | Link |
 |--------|------|
-| Longest Substring Without Repeating Characters | https://leetcode.com/problems/longlongest-substring-without-repeating-characters/ |
+| Longest Substring Without Repeating Characters | https://leetcode.com/problems/longest-substring-without-repeating-characters/ |
 | Longest Repeating Character Replacement | https://leetcode.com/problems/longest-repeating-character-replacement/ |
 | Minimum Window Substring | https://leetcode.com/problems/minimum-window-substring/ |
 | Longest Subarray of 1s After Deleting One | https://leetcode.com/problems/longest-subarray-of-1s-after-deleting-one/ |
