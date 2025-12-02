@@ -2,26 +2,26 @@
 Collection of problems to crack SDE2-level interviews.
 
 ## Arrays (12)
-- [ ] Two Sum — https://leetcode.com/problems/two-sum/
-- [ ] Best Time to Buy and Sell Stock — https://leetcode.com/problems/best-time-to-buy-and-sell-stock/
-- [ ] Maximum Subarray — https://leetcode.com/problems/maximum-subarray/
-- [ ] Product of Array Except Self — https://leetcode.com/problems/product-of-array-except-self/
-- [ ] Rotate Array — https://leetcode.com/problems/rotate-array/
-- [ ] Majority Element — https://leetcode.com/problems/majority-element/
-- [ ] Missing Number — https://leetcode.com/problems/missing-number/
-- [ ] Merge Intervals — https://leetcode.com/problems/merge-intervals/
+- [x] Two Sum — https://leetcode.com/problems/two-sum/
+- [x] Best Time to Buy and Sell Stock — https://leetcode.com/problems/best-time-to-buy-and-sell-stock/
+- [x] Maximum Subarray — https://leetcode.com/problems/maximum-subarray/
+- [x] Product of Array Except Self — https://leetcode.com/problems/product-of-array-except-self/
+- [x] Rotate Array — https://leetcode.com/problems/rotate-array/
+- [x] Majority Element — https://leetcode.com/problems/majority-element/
+- [x] Missing Number — https://leetcode.com/problems/missing-number/
+- [x] Merge Intervals — https://leetcode.com/problems/merge-intervals/
 - [ ] Insert Interval — https://leetcode.com/problems/insert-interval/
-- [ ] Sort Colors — https://leetcode.com/problems/sort-colors/
-- [ ] Container With Most Water — https://leetcode.com/problems/container-with-most-water/
+- [x] Sort Colors — https://leetcode.com/problems/sort-colors/
+- [x] Container With Most Water — https://leetcode.com/problems/container-with-most-water/
 - [ ] Trapping Rain Water — https://leetcode.com/problems/trapping-rain-water/
 
 ## Two Pointers (6)
-- [ ] 3Sum — https://leetcode.com/problems/3sum/
-- [ ] Remove Duplicates from Sorted Array — https://leetcode.com/problems/remove-duplicates-from-sorted-array/
-- [ ] Move Zeroes — https://leetcode.com/problems/move-zeroes/
-- [ ] Valid Palindrome — https://leetcode.com/problems/valid-palindrome/
-- [ ] Reverse String — https://leetcode.com/problems/reverse-string/
-- [ ] Two Sum II — https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/
+- [x] 3Sum — https://leetcode.com/problems/3sum/
+- [x] Remove Duplicates from Sorted Array — https://leetcode.com/problems/remove-duplicates-from-sorted-array/
+- [x] Move Zeroes — https://leetcode.com/problems/move-zeroes/
+- [x] Valid Palindrome — https://leetcode.com/problems/valid-palindrome/
+- [x] Reverse String — https://leetcode.com/problems/reverse-string/
+- [x] Two Sum II — https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/
 
 ## Sliding Window (8)
 - [ ] Longest Substring Without Repeating Characters — https://leetcode.com/problems/longest-substring-without-repeating-characters/
