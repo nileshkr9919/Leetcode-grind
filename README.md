@@ -35,10 +35,10 @@ Collection of problems to crack SDE2-level interviews.
 
 ## Hashing (5)
 - [ ] Group Anagrams — https://leetcode.com/problems/group-anagrams/
-- [ ] Top K Frequent Elements — https://leetcode.com/problems/top-k-frequent-elements/
+- [x] Top K Frequent Elements — https://leetcode.com/problems/top-k-frequent-elements/
 - [ ] Longest Consecutive Sequence — https://leetcode.com/problems/longest-consecutive-sequence/
 - [ ] Ransom Note — https://leetcode.com/problems/ransom-note/
-- [ ] Two Sum — https://leetcode.com/problems/two-sum/
+- [x] Two Sum — https://leetcode.com/problems/two-sum/
 
 ## Trees (10)
 - [ ] Inorder Traversal — https://leetcode.com/problems/binary-tree-inorder-traversal/
@@ -78,7 +78,7 @@ Collection of problems to crack SDE2-level interviews.
 - [ ] Kth Largest Element — https://leetcode.com/problems/kth-largest-element-in-an-array/
 - [ ] K Closest Points to Origin — https://leetcode.com/problems/k-closest-points-to-origin/
 - [ ] Merge K Sorted Lists — https://leetcode.com/problems/merge-k-sorted-lists/
-- [ ] Top K Frequent Elements — https://leetcode.com/problems/top-k-frequent-elements/
+- [x] Top K Frequent Elements — https://leetcode.com/problems/top-k-frequent-elements/
 - [ ] Reorganize String — https://leetcode.com/problems/reorganize-string/
 - [ ] Find Median from Data Stream — https://leetcode.com/problems/find-median-from-data-stream/
 
