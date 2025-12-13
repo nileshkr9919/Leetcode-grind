@@ -1,0 +1,20 @@
+function missingNumber(nums: number[]): number {
+    let i = 0;
+    while (i < nums.length) {
+        let pos = nums[i];
+
+        if (nums[i] !== nums[pos]) {
+            [nums[i], nums[pos]] = [nums[pos], nums[i]];
+        } else {
+            i++;
+        }
+    }
+
+    for (i = 0; i < nums.length; i++) {
+        if (nums[i] === undefined) {
+            return i;
+        }
+    }
+
+    return nums.length;
+};
