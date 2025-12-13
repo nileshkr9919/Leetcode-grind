@@ -11,7 +11,7 @@ function missingNumber(nums: number[]): number {
     }
 
     for (i = 0; i < nums.length; i++) {
-        if (nums[i] === undefined) {
+        if (nums[i] !== i) {
             return i;
         }
     }
