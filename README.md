@@ -41,9 +41,9 @@ Collection of problems to crack SDE2-level interviews.
 - [x] Two Sum — https://leetcode.com/problems/two-sum/
 
 ## Trees (10)
-- [ ] Inorder Traversal — https://leetcode.com/problems/binary-tree-inorder-traversal/
-- [ ] Preorder Traversal — https://leetcode.com/problems/binary-tree-preorder-traversal/
-- [ ] Postorder Traversal — https://leetcode.com/problems/binary-tree-postorder-traversal/
+- [x] Inorder Traversal — https://leetcode.com/problems/binary-tree-inorder-traversal/
+- [x] Preorder Traversal — https://leetcode.com/problems/binary-tree-preorder-traversal/
+- [x] Postorder Traversal — https://leetcode.com/problems/binary-tree-postorder-traversal/
 - [ ] Level Order Traversal — https://leetcode.com/problems/binary-tree-level-order-traversal/
 - [ ] Diameter of Binary Tree — https://leetcode.com/problems/diameter-of-binary-tree/
 - [ ] Balanced Binary Tree — https://leetcode.com/problems/balanced-binary-tree/
@@ -102,7 +102,7 @@ Collection of problems to crack SDE2-level interviews.
 - [ ] Maximal Square — https://leetcode.com/problems/maximal-square/
 
 ## Linked List (6)
-- [ ] Reverse Linked List — https://leetcode.com/problems/reverse-linked-list/
+- [x] Reverse Linked List — https://leetcode.com/problems/reverse-linked-list/
 - [ ] Middle of Linked List — https://leetcode.com/problems/middle-of-the-linked-list/
 - [ ] Merge Two Sorted Lists — https://leetcode.com/problems/merge-two-sorted-lists/
 - [ ] Linked List Cycle — https://leetcode.com/problems/linked-list-cycle/
