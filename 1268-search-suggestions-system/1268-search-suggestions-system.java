@@ -1,12 +1,15 @@
 class Solution {
     public List<List<String>> suggestedProducts(String[] products, String searchWord) {
         List<List<String>> result = new ArrayList<>();
-        String[] sortedProducts = new String[products.length];
+        List<String> sortedProducts = new ArrayList<>();
 
         for (int i = 0; i < products.length; i++) {
-            sortedProducts[i] = products[i].toLowerCase();
+            String product = products[i].toLowerCase();
+            if (product.startsWith(searchWord.substring(0,1))) {
+                sortedProducts.add(product);
+            }
         }
-        Arrays.sort(sortedProducts);
+        Collections.sort(sortedProducts);
 
         for (int i = 1; i <= searchWord.length(); i++) {
             String query = searchWord.substring(0, i);
