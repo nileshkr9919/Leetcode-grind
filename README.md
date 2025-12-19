@@ -103,7 +103,7 @@ Collection of problems to crack SDE2-level interviews.
 
 ## Linked List (6)
 - [x] Reverse Linked List — https://leetcode.com/problems/reverse-linked-list/
-- [ ] Middle of Linked List — https://leetcode.com/problems/middle-of-the-linked-list/
+- [x] Middle of Linked List — https://leetcode.com/problems/middle-of-the-linked-list/
 - [ ] Merge Two Sorted Lists — https://leetcode.com/problems/merge-two-sorted-lists/
 - [ ] Linked List Cycle — https://leetcode.com/problems/linked-list-cycle/
 - [ ] Remove Nth Node From End — https://leetcode.com/problems/remove-nth-node-from-end-of-list/
