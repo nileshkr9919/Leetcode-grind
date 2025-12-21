@@ -2,7 +2,7 @@ class Solution {
     int[] dp;
 
     Solution() {
-        dp = new int[45];
+        dp = new int[46];
         dp[0] = 0;
         dp[1] = 1;
         dp[2] = 2;
