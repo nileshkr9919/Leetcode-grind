@@ -6,9 +6,7 @@ class Solution {
 
         for (String str : strs) {
             int[] arr = new int[26];
-            for (int i = 0; i < 26; i++) {
-                arr[i] = 0;
-            }
+
             for (char ch : str.toCharArray()) {
                 arr[ch - 'a']++;
             }
