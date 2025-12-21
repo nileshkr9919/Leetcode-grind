@@ -20,7 +20,7 @@ class Solution {
 
             String key = _key.toString();
 
-            if (!map.containsKey(key.toString())) {
+            if (!map.containsKey(key)) {
                 map.put(key, new ArrayList());
             }
 
