@@ -1,5 +1,5 @@
 function plusOne(digits: number[]): number[] {
-    let index = digits.length - 1, carry = 0;
+    let index = digits.length - 1;
 
     while(index >= 0) {
         digits[index]++;
