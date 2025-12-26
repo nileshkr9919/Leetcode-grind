@@ -10,10 +10,10 @@ Collection of problems to crack SDE2-level interviews.
 - [x] Majority Element — https://leetcode.com/problems/majority-element/
 - [x] Missing Number — https://leetcode.com/problems/missing-number/
 - [x] Merge Intervals — https://leetcode.com/problems/merge-intervals/
-- [ ] Insert Interval — https://leetcode.com/problems/insert-interval/
+- [x] Insert Interval — https://leetcode.com/problems/insert-interval/
 - [x] Sort Colors — https://leetcode.com/problems/sort-colors/
 - [x] Container With Most Water — https://leetcode.com/problems/container-with-most-water/
-- [ ] Trapping Rain Water — https://leetcode.com/problems/trapping-rain-water/
+- [x] Trapping Rain Water — https://leetcode.com/problems/trapping-rain-water/
 
 ## Two Pointers (6)
 - [x] 3Sum — https://leetcode.com/problems/3sum/
@@ -34,7 +34,7 @@ Collection of problems to crack SDE2-level interviews.
 - [ ] Find All Anagrams in a String — https://leetcode.com/problems/find-all-anagrams-in-a-string/
 
 ## Hashing (5)
-- [ ] Group Anagrams — https://leetcode.com/problems/group-anagrams/
+- [x] Group Anagrams — https://leetcode.com/problems/group-anagrams/
 - [x] Top K Frequent Elements — https://leetcode.com/problems/top-k-frequent-elements/
 - [ ] Longest Consecutive Sequence — https://leetcode.com/problems/longest-consecutive-sequence/
 - [ ] Ransom Note — https://leetcode.com/problems/ransom-note/
@@ -44,10 +44,10 @@ Collection of problems to crack SDE2-level interviews.
 - [x] Inorder Traversal — https://leetcode.com/problems/binary-tree-inorder-traversal/
 - [x] Preorder Traversal — https://leetcode.com/problems/binary-tree-preorder-traversal/
 - [x] Postorder Traversal — https://leetcode.com/problems/binary-tree-postorder-traversal/
-- [ ] Level Order Traversal — https://leetcode.com/problems/binary-tree-level-order-traversal/
+- [x] Level Order Traversal — https://leetcode.com/problems/binary-tree-level-order-traversal/
 - [ ] Diameter of Binary Tree — https://leetcode.com/problems/diameter-of-binary-tree/
 - [ ] Balanced Binary Tree — https://leetcode.com/problems/balanced-binary-tree/
-- [ ] Same Tree — https://leetcode.com/problems/same-tree/
+- [x] Same Tree — https://leetcode.com/problems/same-tree/
 - [ ] Maximum Depth — https://leetcode.com/problems/maximum-depth-of-binary-tree/
 - [ ] Path Sum — https://leetcode.com/problems/path-sum/
 - [ ] Lowest Common Ancestor — https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/
@@ -72,7 +72,7 @@ Collection of problems to crack SDE2-level interviews.
 - [ ] Peak Element — https://leetcode.com/problems/find-peak-element/
 - [ ] Koko Eating Bananas — https://leetcode.com/problems/koko-eating-bananas/
 - [ ] Capacity To Ship Packages — https://leetcode.com/problems/capacity-to-ship-packages-within-d-days/
-- [ ] Median of Two Sorted Arrays — https://leetcode.com/problems/median-of-two-sorted-arrays/
+- [x] Median of Two Sorted Arrays — https://leetcode.com/problems/median-of-two-sorted-arrays/
 
 ## Heap (6)
 - [ ] Kth Largest Element — https://leetcode.com/problems/kth-largest-element-in-an-array/
@@ -83,7 +83,7 @@ Collection of problems to crack SDE2-level interviews.
 - [ ] Find Median from Data Stream — https://leetcode.com/problems/find-median-from-data-stream/
 
 ## Stack (6)
-- [ ] Valid Parentheses — https://leetcode.com/problems/valid-parentheses/
+- [x] Valid Parentheses — https://leetcode.com/problems/valid-parentheses/
 - [ ] Min Stack — https://leetcode.com/problems/min-stack/
 - [ ] Daily Temperatures — https://leetcode.com/problems/daily-temperatures/
 - [ ] Next Greater Element I — https://leetcode.com/problems/next-greater-element-i/
@@ -91,8 +91,8 @@ Collection of problems to crack SDE2-level interviews.
 - [ ] Asteroid Collision — https://leetcode.com/problems/asteroid-collision/
 
 ## Dynamic Programming (9)
-- [ ] Climbing Stairs — https://leetcode.com/problems/climbing-stairs/
-- [ ] House Robber — https://leetcode.com/problems/house-robber/
+- [x] Climbing Stairs — https://leetcode.com/problems/climbing-stairs/
+- [x] House Robber — https://leetcode.com/problems/house-robber/
 - [ ] House Robber II — https://leetcode.com/problems/house-robber-ii/
 - [ ] Longest Increasing Subsequence — https://leetcode.com/problems/longest-increasing-subsequence/
 - [ ] Coin Change — https://leetcode.com/problems/coin-change/
