@@ -1,5 +1,5 @@
 # Leetcode Grind  
-Collection of problems to crack SDE2-level interviews.
+Collection of problems to crack SDE interviews.
 
 ## Arrays (14)
 - [x] Two Sum — https://leetcode.com/problems/two-sum/
