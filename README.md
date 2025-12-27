@@ -50,7 +50,7 @@ Collection of problems to crack SDE2-level interviews.
 - [ ] Level Order Traversal — https://leetcode.com/problems/binary-tree-level-order-traversal/
 - [ ] Diameter of Binary Tree — https://leetcode.com/problems/diameter-of-binary-tree/
 - [ ] Balanced Binary Tree — https://leetcode.com/problems/balanced-binary-tree/
-- [ ] Same Tree — https://leetcode.com/problems/same-tree/
+- [x] Same Tree — https://leetcode.com/problems/same-tree/
 - [ ] Maximum Depth — https://leetcode.com/problems/maximum-depth-of-binary-tree/
 - [ ] Path Sum — https://leetcode.com/problems/path-sum/
 - [ ] Lowest Common Ancestor — https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/
