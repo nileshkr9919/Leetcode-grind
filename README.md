@@ -79,7 +79,7 @@ Collection of problems to crack SDE interviews.
 - [x] Search Suggestions System — https://leetcode.com/problems/search-suggestions-system/
 
 ## Heap (7)
-- [ ] Kth Largest Element — https://leetcode.com/problems/kth-largest-element-in-an-array/
+- [x] Kth Largest Element — https://leetcode.com/problems/kth-largest-element-in-an-array/
 - [ ] K Closest Points to Origin — https://leetcode.com/problems/k-closest-points-to-origin/
 - [ ] Merge K Sorted Lists — https://leetcode.com/problems/merge-k-sorted-lists/
 - [x] Top K Frequent Elements — https://leetcode.com/problems/top-k-frequent-elements/
