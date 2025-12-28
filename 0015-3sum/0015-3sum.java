@@ -15,17 +15,23 @@ class Solution {
                 int sum = nums[i] + nums[left] + nums[right];
 
                 if (sum == 0) {
-                    List<Integer> list = new ArrayList();
-                    list.add(nums[i]);
-                    list.add(nums[left]);
-                    list.add(nums[right]);
-                    res.add(list);
+                    List<Integer> temp = new ArrayList<>();
+                    temp.add(nums[i]);
+                    temp.add(nums[left]);
+                    temp.add(nums[right]);
+
+                    res.add(temp);
+
+                    while (left < right && nums[left] == nums[left + 1])
+                        left++;
+                    while (right > left && nums[right] == nums[right - 1])
+                        right--;
                     left++;
                     right--;
-                } else if (sum < 0) {
-                    left++;
+                } else if (sum > 0) {
+                    right--;
                 } else {
-                    right--;
+                    left++;
                 }
             }
         }
