@@ -110,10 +110,10 @@ Collection of problems to crack SDE interviews.
 - [x] Minimum Penalty for a Shop — https://leetcode.com/problems/minimum-penalty-for-a-shop/
 
 ## Linked List (8)
-- [ ] Reverse Linked List — https://leetcode.com/problems/reverse-linked-list/
+- [x] Reverse Linked List — https://leetcode.com/problems/reverse-linked-list/
 - [x] Middle of Linked List — https://leetcode.com/problems/middle-of-the-linked-list/
-- [ ] Merge Two Sorted Lists — https://leetcode.com/problems/merge-two-sorted-lists/
-- [ ] Linked List Cycle — https://leetcode.com/problems/linked-list-cycle/
+- [x] Merge Two Sorted Lists — https://leetcode.com/problems/merge-two-sorted-lists/
+- [x] Linked List Cycle — https://leetcode.com/problems/linked-list-cycle/
 - [x] Remove Nth Node From End — https://leetcode.com/problems/remove-nth-node-from-end-of-list/
 - [x] LRU Cache — https://leetcode.com/problems/lru-cache/
 - [x] Add Two Numbers — https://leetcode.com/problems/add-two-numbers/
