@@ -1,40 +1,29 @@
 class MinStack {
-    private class TMinStack {
-        int val;
-        int min;
-
-        TMinStack(int val, int min) {
-            this.val = val;
-            this.min = min;
-        }
-    }
-
-    private List<TMinStack> stack;
+    Deque<int[]> items;
 
     public MinStack() {
-        this.stack = new LinkedList();
+        items = new ArrayDeque<>();
     }
 
     public void push(int val) {
-        int min;
-        if (stack.size() == 0)
-            min = val;
-        else {
-            min = Math.min(stack.getFirst().min, val);
+        if (items.isEmpty()) {
+            items.push(new int[]{val, val});
+        } else {
+            int currentMin = items.peek()[1];
+            items.push(new int[]{val, Math.min(val, currentMin)});
         }
-        this.stack.addFirst(new TMinStack(val, min));
     }
 
     public void pop() {
-        this.stack.removeFirst();
+        items.pop();
     }
 
     public int top() {
-        return this.stack.getFirst().val;
+        return items.peek()[0];
     }
 
     public int getMin() {
-        return this.stack.getFirst().min;
+        return items.peek()[1];
     }
 }
 
