@@ -104,7 +104,7 @@ Collection of problems to crack SDE interviews.
 - [ ] Partition Equal Subset Sum — https://leetcode.com/problems/partition-equal-subset-sum/
 - [ ] Edit Distance — https://leetcode.com/problems/edit-distance/
 - [ ] Decode Ways — https://leetcode.com/problems/decode-ways/
-- [ ] Maximal Square — https://leetcode.com/problems/maximal-square/
+- [x] Maximal Square — https://leetcode.com/problems/maximal-square/
 - [x] Unique Paths — https://leetcode.com/problems/unique-paths/
 - [x] Unique Paths II — https://leetcode.com/problems/unique-paths-ii/
 - [x] Minimum Penalty for a Shop — https://leetcode.com/problems/minimum-penalty-for-a-shop/
