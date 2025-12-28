@@ -90,7 +90,7 @@ Collection of problems to crack SDE interviews.
 ## Stack (6)
 - [x] Valid Parentheses — https://leetcode.com/problems/valid-parentheses/
 - [ ] Min Stack — https://leetcode.com/problems/min-stack/
-- [ ] Daily Temperatures — https://leetcode.com/problems/daily-temperatures/
+- [x] Daily Temperatures — https://leetcode.com/problems/daily-temperatures/
 - [ ] Next Greater Element I — https://leetcode.com/problems/next-greater-element-i/
 - [ ] Basic Calculator II — https://leetcode.com/problems/basic-calculator-ii/
 - [ ] Asteroid Collision — https://leetcode.com/problems/asteroid-collision/
@@ -115,7 +115,7 @@ Collection of problems to crack SDE interviews.
 - [ ] Merge Two Sorted Lists — https://leetcode.com/problems/merge-two-sorted-lists/
 - [ ] Linked List Cycle — https://leetcode.com/problems/linked-list-cycle/
 - [x] Remove Nth Node From End — https://leetcode.com/problems/remove-nth-node-from-end-of-list/
-- [ ] LRU Cache — https://leetcode.com/problems/lru-cache/
+- [x] LRU Cache — https://leetcode.com/problems/lru-cache/
 - [x] Add Two Numbers — https://leetcode.com/problems/add-two-numbers/
 - [x] Remove Duplicates from Sorted List — https://leetcode.com/problems/remove-duplicates-from-sorted-list/
 
