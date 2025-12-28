@@ -40,7 +40,7 @@ Collection of problems to crack SDE interviews.
 - [x] Group Anagrams — https://leetcode.com/problems/group-anagrams/
 - [x] Top K Frequent Elements — https://leetcode.com/problems/top-k-frequent-elements/
 - [ ] Longest Consecutive Sequence — https://leetcode.com/problems/longest-consecutive-sequence/
-- [ ] Ransom Note — https://leetcode.com/problems/ransom-note/
+- [x] Ransom Note — https://leetcode.com/problems/ransom-note/
 - [x] Two Sum — https://leetcode.com/problems/two-sum/
 
 ## Trees (10)
