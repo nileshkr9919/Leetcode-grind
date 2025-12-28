@@ -97,7 +97,7 @@ Collection of problems to crack SDE interviews.
 
 ## Dynamic Programming (12)
 - [x] Climbing Stairs — https://leetcode.com/problems/climbing-stairs/
-- [ ] House Robber — https://leetcode.com/problems/house-robber/
+- [x] House Robber — https://leetcode.com/problems/house-robber/
 - [ ] House Robber II — https://leetcode.com/problems/house-robber-ii/
 - [ ] Longest Increasing Subsequence — https://leetcode.com/problems/longest-increasing-subsequence/
 - [ ] Coin Change — https://leetcode.com/problems/coin-change/
