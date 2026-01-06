@@ -1,24 +1,12 @@
 function coinChange(coins: number[], amount: number): number {
-    const memo = new Map<number, number>();
-    memo.set(0, 0);
-
-    function dfs(rem: number): number {
-        if (rem < 0) return -1;
-        if (memo.has(rem)) return memo.get(rem)!;
-
-        let min = Infinity;
-
-        for (const coin of coins) {
-            const res = dfs(rem - coin);
-            if (res !== -1) {
-                min = Math.min(min, res + 1);
+    const dp = Array(amount + 1).fill(Infinity);
+    dp[0] = 0;
+    for(let i=1; i<=amount;i++) {
+        for(const coin of coins) {
+            if(i-coin >= 0) {
+                dp[i] = Math.min(dp[i], dp[i-coin] + 1);
             }
         }
-
-        const ans = min === Infinity ? -1 : min;
-        memo.set(rem, ans);
-        return ans;
     }
-
-    return dfs(amount);
-}
+    return dp[amount] === Infinity ? -1 : dp[amount];
+};
