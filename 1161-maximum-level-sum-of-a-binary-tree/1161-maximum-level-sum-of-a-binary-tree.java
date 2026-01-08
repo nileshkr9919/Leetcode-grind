@@ -15,38 +15,33 @@
  */
 class Solution {
     public int maxLevelSum(TreeNode root) {
-        Deque<List<TreeNode>> queue = new ArrayDeque<>();
-        TreeNode current = root;
-        List<TreeNode> firstLevel = new ArrayList<>();
-        firstLevel.add(root);
-        queue.offer(firstLevel);
+        Deque<TreeNode> queue = new ArrayDeque<>();
+        queue.offer(root);
 
-        long maxSum = Long.MIN_VALUE;
-        int level = 0, maxSumLevel = 0;
-        while (queue.size() > 0) {
-            level++;
-            List<TreeNode> levelNodes = queue.pollFirst();
-            List<TreeNode> nextLevel = new ArrayList<>();
-            Long sum = 0L;
+        int maxSum = Integer.MIN_VALUE, level = 1, maxLevel = 1;
 
-            for (TreeNode node : levelNodes) {
+        while (!queue.isEmpty()) {
+            int size = queue.size();
+            int sum = 0;
+
+            for (int i = 0;i<size;i++) {
+                TreeNode node = queue.pollFirst();
                 sum += node.val;
 
                 if (node.left != null)
-                    nextLevel.add(node.left);
+                    queue.offer(node.left);
                 if (node.right != null)
-                    nextLevel.add(node.right);
+                    queue.offer(node.right);
             }
-            if (nextLevel.size() > 0)
-                queue.offer(nextLevel);
 
-            System.out.println(sum + " " + maxSum);
             if (sum > maxSum) {
                 maxSum = sum;
-                maxSumLevel = level;
+                maxLevel = level;
             }
+
+            level++;
         }
 
-        return maxSumLevel;
+        return maxLevel;
     }
 }
