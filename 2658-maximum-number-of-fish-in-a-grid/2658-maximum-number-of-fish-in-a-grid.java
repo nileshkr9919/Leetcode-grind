@@ -1,7 +1,7 @@
 class Solution {
     public int findMaxFish(int[][] grid) {
         int m = grid.length, n = grid[0].length;
-        long res = 0;
+        int res = 0;
 
         for (int i = 0; i < m; i++) {
             for (int j = 0; j < n; j++) {
@@ -12,7 +12,7 @@ class Solution {
             }
         }
 
-        return (int) res;
+        return res;
     }
 
     // DFS Approach
@@ -32,12 +32,12 @@ class Solution {
     // }
 
     // BFS Approach
-    private long bfs(int[][] grid, int idx, int jdx) {
+    private int bfs(int[][] grid, int idx, int jdx) {
         Deque<int[]> queue = new LinkedList<>();
         int m = grid.length;
         int n = grid[0].length;
 
-        long sumOfIsland = grid[idx][jdx];
+        int sumOfIsland = grid[idx][jdx];
 
         int[] rowDir = { -1, 0, 0, 1 };
         int[] colDir = { 0, -1, 1, 0 };
