@@ -147,3 +147,23 @@ Collection of problems to crack SDE interviews.
 
 ## Miscellaneous (1)
 - [x] Debounce — https://leetcode.com/problems/debounce/
+
+<!---LeetCode Topics Start-->
+# LeetCode Topics
+## Hash Table
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0133-clone-graph](https://github.com/nileshkr9919/Leetcode-grind/tree/main/0133-clone-graph/) | Medium |
+## Depth-First Search
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0133-clone-graph](https://github.com/nileshkr9919/Leetcode-grind/tree/main/0133-clone-graph/) | Medium |
+## Breadth-First Search
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0133-clone-graph](https://github.com/nileshkr9919/Leetcode-grind/tree/main/0133-clone-graph/) | Medium |
+## Graph Theory
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0133-clone-graph](https://github.com/nileshkr9919/Leetcode-grind/tree/main/0133-clone-graph/) | Medium |
+<!---LeetCode Topics End-->
