@@ -30,7 +30,6 @@ class Solution {
             return;
         map.put(node, new Node(node.val));
 
-        Node copy = new Node(node.val);
         for (Node neighbour : node.neighbors) {
             if (!map.containsKey(neighbour)) {
                 dfs(neighbour, map);
