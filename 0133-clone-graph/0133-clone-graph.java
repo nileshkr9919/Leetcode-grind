@@ -20,6 +20,8 @@ class Node {
 
 class Solution {
     public Node cloneGraph(Node node) {
+        if (node == null)
+            return null;
         HashMap<Node, Node> map = new HashMap<>();
         dfs(node, map);
         return map.get(node);
