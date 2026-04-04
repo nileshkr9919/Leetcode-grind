@@ -47,14 +47,10 @@ class Solution {
             return;
         Deque<Node> queue = new LinkedList<>();
         queue.add(node);
+        map.put(node, new Node(node.val));
 
         while (!queue.isEmpty()) {
             Node curr = queue.poll();
-
-            if (!map.containsKey(curr)) {
-                Node copy = new Node(curr.val);
-                map.put(curr, copy);
-            }
 
             for (Node neighbor : curr.neighbors) {
                 if (neighbor != null && !map.containsKey(neighbor)) {
