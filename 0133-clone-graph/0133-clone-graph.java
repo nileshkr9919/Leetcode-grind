@@ -20,46 +20,24 @@ class Node {
 
 class Solution {
     public Node cloneGraph(Node node) {
-        if (node == null)
-            return null;
         HashMap<Node, Node> map = new HashMap<>();
-        bfs(node, map);
+        dfs(node, map);
         return map.get(node);
     }
 
-    // DFS Approach
-    // private void dfs(Node node, HashMap<Node, Node> map) {
-    //     if (node == null)
-    //         return;
-    //     map.put(node, new Node(node.val));
+    private void dfs(Node node, HashMap<Node, Node> map) {
+        if (node == null || map.containsKey(node))
+            return;
 
-    //     for (Node neighbour : node.neighbors) {
-    //         if (!map.containsKey(neighbour)) {
-    //             dfs(neighbour, map);
-    //         }
-    //         map.get(node).neighbors.add(map.get(neighbour));
-    //     }
-    // }
+        Node copy = new Node(node.val);
+        map.put(node, copy);
 
-    // BFS Approach
-    private void bfs(Node node, HashMap<Node, Node> map) {
-        Deque<Node> queue = new LinkedList<>();
-        map.put(node, new Node(node.val));
-        queue.add(node);
-
-        while (!queue.isEmpty()) {
-            Node curr = queue.poll();
-            if (curr == null)
-                return;
-
-            for (Node neighbor : curr.neighbors) {
-                if (!map.containsKey(neighbor)) {
-                    map.put(neighbor, new Node(neighbor.val));
-                    queue.add(neighbor);
-                }
-                map.get(curr).neighbors.add(map.get(neighbor));
+        for (Node neighbor : node.neighbors) {
+            if (!map.containsKey(neighbor)) {
+                Node neighborCopy = new Node(neighbor.val);
+                dfs(neighbor, map);
             }
+            map.get(node).neighbors.add(map.get(neighbor));
         }
-
     }
 }
