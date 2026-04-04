@@ -34,7 +34,6 @@ class Solution {
 
         for (Node neighbor : node.neighbors) {
             if (!map.containsKey(neighbor)) {
-                Node neighborCopy = new Node(neighbor.val);
                 dfs(neighbor, map);
             }
             map.get(node).neighbors.add(map.get(neighbor));
