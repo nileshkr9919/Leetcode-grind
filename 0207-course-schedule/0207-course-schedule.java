@@ -11,8 +11,6 @@ class Solution {
             map.get(b).add(a);
         }
 
-        System.out.println(map);
-
         int[] state = new int[numCourses];
 
         for (int i = 0; i < numCourses; i++) {
@@ -25,8 +23,10 @@ class Solution {
     }
 
     private boolean dfs(int course, HashMap<Integer, List<Integer>> graph, int[] state) {
-        if(state[course] == 1) return true;
-        if(state[course] == 2) return false;
+        if (state[course] == 1)
+            return true;
+        if (state[course] == 2)
+            return false;
 
         state[course] = 1;
 
