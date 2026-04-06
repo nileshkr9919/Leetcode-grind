@@ -158,12 +158,19 @@ Collection of problems to crack SDE interviews.
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0133-clone-graph](https://github.com/nileshkr9919/Leetcode-grind/tree/main/0133-clone-graph/) | Medium |
+| [0207-course-schedule](https://github.com/nileshkr9919/Leetcode-grind/tree/main/0207-course-schedule/) | Medium |
 ## Breadth-First Search
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0133-clone-graph](https://github.com/nileshkr9919/Leetcode-grind/tree/main/0133-clone-graph/) | Medium |
+| [0207-course-schedule](https://github.com/nileshkr9919/Leetcode-grind/tree/main/0207-course-schedule/) | Medium |
 ## Graph Theory
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0133-clone-graph](https://github.com/nileshkr9919/Leetcode-grind/tree/main/0133-clone-graph/) | Medium |
+| [0207-course-schedule](https://github.com/nileshkr9919/Leetcode-grind/tree/main/0207-course-schedule/) | Medium |
+## Topological Sort
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0207-course-schedule](https://github.com/nileshkr9919/Leetcode-grind/tree/main/0207-course-schedule/) | Medium |
 <!---LeetCode Topics End-->
