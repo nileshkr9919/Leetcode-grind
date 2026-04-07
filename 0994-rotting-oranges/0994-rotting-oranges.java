@@ -1,9 +1,10 @@
 class Solution {
     public int orangesRotting(int[][] grid) {
-        int m = grid.length, n = grid[0].length;
-        int fresh = 0;
+        int m = grid.length;
+        int n = grid[0].length;
 
         Deque<int[]> queue = new LinkedList<>();
+        int fresh = 0;
 
         for (int i = 0; i < m; i++) {
             for (int j = 0; j < n; j++) {
@@ -15,36 +16,33 @@ class Solution {
             }
         }
 
-        if (fresh == 0)
-            return 0;
-
+        int minutes = 0;
         int[] rowDir = new int[] { 0, 0, -1, 1 };
         int[] colDir = new int[] { -1, 1, 0, 0 };
 
-        int minutes = 0;
-
         while (!queue.isEmpty()) {
-            int size = queue.size();
             boolean rotted = false;
+            int size = queue.size();
 
-            for (int i = 0; i < size; i++) {
-                int[] curr = queue.poll();
+            for (int k = 0; k < size; k++) {
+                int[] cell = queue.poll();
+                for (int i = 0; i < 4; i++) {
+                    int nr = cell[0] + rowDir[i];
+                    int nc = cell[1] + colDir[i];
 
-                for (int d = 0; d < 4; d++) {
-                    int nr = curr[0] + rowDir[d];
-                    int nc = curr[1] + colDir[d];
-
-                    if (nr >= 0 && nc >= 0 && nr < m && nc < n && grid[nr][nc] == 1) {
-                        grid[nr][nc] = 2;
-                        queue.add(new int[] { nr, nc });
-                        fresh--;
-                        rotted = true;
+                    if (nr >= 0 && nc >= 0 && nr < m && nc < n) {
+                        if (grid[nr][nc] == 1) {
+                            grid[nr][nc] = 2;
+                            rotted = true;
+                            fresh--;
+                            queue.add(new int[] { nr, nc });
+                        }
                     }
                 }
             }
-
-            if (rotted)
+            if (rotted) {
                 minutes++;
+            }
         }
 
         return fresh == 0 ? minutes : -1;
