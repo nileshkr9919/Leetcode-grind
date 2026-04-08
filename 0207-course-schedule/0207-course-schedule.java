@@ -3,12 +3,12 @@ class Solution {
         HashMap<Integer, List<Integer>> graph = new HashMap<>();
 
         for (int[] prerequisite : prerequisites) {
-            if (!graph.containsKey(prerequisite)) {
+            if (!graph.containsKey(prerequisite[1])) {
                 graph.put(prerequisite[1], new ArrayList<>());
             }
             graph.get(prerequisite[1]).add(prerequisite[0]);
         }
-
+        System.out.println(graph);
         int[] state = new int[numCourses];
 
         for (int i = 0; i < numCourses; i++) {
