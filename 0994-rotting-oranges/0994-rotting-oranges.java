@@ -1,9 +1,8 @@
 class Solution {
     public int orangesRotting(int[][] grid) {
+        Deque<int[]> queue = new LinkedList<>();
         int m = grid.length;
         int n = grid[0].length;
-
-        Deque<int[]> queue = new LinkedList<>();
         int fresh = 0;
 
         for (int i = 0; i < m; i++) {
@@ -17,34 +16,37 @@ class Solution {
         }
 
         int minutes = 0;
+
         int[] rowDir = new int[] { 0, 0, -1, 1 };
         int[] colDir = new int[] { -1, 1, 0, 0 };
 
         while (!queue.isEmpty()) {
-            boolean rotted = false;
             int size = queue.size();
+            boolean rotted = false;
 
             for (int k = 0; k < size; k++) {
-                int[] cell = queue.poll();
-                for (int i = 0; i < 4; i++) {
-                    int nr = cell[0] + rowDir[i];
-                    int nc = cell[1] + colDir[i];
+                int[] curr = queue.poll();
+                int r = curr[0];
+                int c = curr[1];
 
-                    if (nr >= 0 && nc >= 0 && nr < m && nc < n) {
-                        if (grid[nr][nc] == 1) {
-                            grid[nr][nc] = 2;
-                            rotted = true;
-                            fresh--;
-                            queue.add(new int[] { nr, nc });
-                        }
+                for (int dir = 0; dir < 4; dir++) {
+                    int nr = r + rowDir[dir];
+                    int nc = c + colDir[dir];
+
+                    if (nr >= 0 && nr < m && nc >= 0 && nc < n && grid[nr][nc] == 1) {
+                        grid[nr][nc] = 2;
+                        fresh--;
+                        rotted = true;
+                        queue.add(new int[] { nr, nc });
                     }
                 }
             }
+
             if (rotted) {
                 minutes++;
             }
         }
 
-        return fresh == 0 ? minutes : -1;
+        return fresh > 0 ? -1 : minutes;
     }
 }
