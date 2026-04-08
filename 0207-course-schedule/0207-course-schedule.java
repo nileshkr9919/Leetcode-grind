@@ -8,7 +8,6 @@ class Solution {
             }
             graph.get(prerequisite[1]).add(prerequisite[0]);
         }
-        System.out.println(graph);
         int[] state = new int[numCourses];
 
         for (int i = 0; i < numCourses; i++) {
