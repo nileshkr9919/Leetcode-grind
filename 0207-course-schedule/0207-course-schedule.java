@@ -1,20 +1,18 @@
 class Solution {
     public boolean canFinish(int numCourses, int[][] prerequisites) {
-        HashMap<Integer, List<Integer>> map = new HashMap<>();
-        for (int i = 0; i < prerequisites.length; i++) {
-            int a = prerequisites[i][0];
-            int b = prerequisites[i][1];
+        HashMap<Integer, List<Integer>> graph = new HashMap<>();
 
-            if (!map.containsKey(b)) {
-                map.put(b, new ArrayList<>());
+        for (int[] prerequisite : prerequisites) {
+            if (!graph.containsKey(prerequisite)) {
+                graph.put(prerequisite[1], new ArrayList<>());
             }
-            map.get(b).add(a);
+            graph.get(prerequisite[1]).add(prerequisite[0]);
         }
 
         int[] state = new int[numCourses];
 
         for (int i = 0; i < numCourses; i++) {
-            if (dfs(i, map, state)) {
+            if (dfs(graph, i, state)) {
                 return false;
             }
         }
@@ -22,24 +20,23 @@ class Solution {
         return true;
     }
 
-    private boolean dfs(int course, HashMap<Integer, List<Integer>> graph, int[] state) {
-        if (state[course] == 1)
+    private boolean dfs(HashMap<Integer, List<Integer>> graph, int i, int[] state) {
+        if (state[i] == 1) {
             return true;
-        if (state[course] == 2)
+        }
+        if (state[i] == 2) {
             return false;
-
-        state[course] = 1;
-
-        if (graph.containsKey(course)) {
-            List<Integer> neighbors = graph.get(course);
-            for (int neighbor : neighbors) {
-                if (dfs(neighbor, graph, state)) {
+        }
+        state[i] = 1;
+        if (graph.containsKey(i)) {
+            List<Integer> neighbors = graph.get(i);
+            for (int dep : neighbors) {
+                if (dfs(graph, dep, state)) {
                     return true;
                 }
             }
         }
-
-        state[course] = 2;
+        state[i] = 2;
         return false;
     }
 }
