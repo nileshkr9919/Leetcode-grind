@@ -6,7 +6,7 @@ class Solution {
         for (int i = 0; i < m; i++) {
             for (int j = 0; j < n; j++) {
                 if (grid[i][j] != 0) {
-                    int valueOfIsland = bfs(grid, i, j);
+                    int valueOfIsland = dfs(grid, i, j);
                     res = Math.max(res, valueOfIsland);
                 }
             }
@@ -16,51 +16,47 @@ class Solution {
     }
 
     // DFS Approach
-    // private int dfs(char[][] grid, int i, int j) {
-    //     if (i < 0 || j < 0 || i >= grid.length || j >= grid[0].length || grid[i][j] == '0') {
-    //         return;
-    //     }
+    private int dfs(int[][] grid, int i, int j) {
+        if (i < 0 || j < 0 || i >= grid.length || j >= grid[0].length || grid[i][j] == 0) {
+            return 0;
+        }
 
-    //     grid[i][j] = '0';
+        grid[i][j] = 0;
 
-    //     dfs(grid, i, j + 1);
-    //     dfs(grid, i, j - 1);
-    //     dfs(grid, i - 1, j);
-    //     dfs(grid, i + 1, j);
-
-    //     return;
-    // }
+        return 1 + dfs(grid, i, j + 1) + dfs(grid, i, j - 1) + dfs(grid, i - 1, j)
+                + dfs(grid, i + 1, j);
+    }
 
     // BFS Approach
-    private int bfs(int[][] grid, int idx, int jdx) {
-        Deque<int[]> queue = new LinkedList<>();
-        int m = grid.length;
-        int n = grid[0].length;
+    // private int bfs(int[][] grid, int idx, int jdx) {
+    //     Deque<int[]> queue = new LinkedList<>();
+    //     int m = grid.length;
+    //     int n = grid[0].length;
 
-        int sumOfIsland = grid[idx][jdx];
+    //     int sumOfIsland = grid[idx][jdx];
 
-        int[] rowDir = { -1, 0, 0, 1 };
-        int[] colDir = { 0, -1, 1, 0 };
+    //     int[] rowDir = { -1, 0, 0, 1 };
+    //     int[] colDir = { 0, -1, 1, 0 };
 
-        queue.add(new int[] { idx, jdx });
-        grid[idx][jdx] = 0;
+    //     queue.add(new int[] { idx, jdx });
+    //     grid[idx][jdx] = 0;
 
-        while (!queue.isEmpty()) {
-            int[] cell = queue.poll();
-            int i = cell[0];
-            int j = cell[1];
+    //     while (!queue.isEmpty()) {
+    //         int[] cell = queue.poll();
+    //         int i = cell[0];
+    //         int j = cell[1];
 
-            for (int dir = 0; dir < 4; dir++) {
-                int nr = i + rowDir[dir];
-                int nc = j + colDir[dir];
+    //         for (int dir = 0; dir < 4; dir++) {
+    //             int nr = i + rowDir[dir];
+    //             int nc = j + colDir[dir];
 
-                if (nr >= 0 && nc >= 0 && nr < m && nc < n && grid[nr][nc] != 0) {
-                    sumOfIsland += grid[nr][nc];
-                    grid[nr][nc] = 0;
-                    queue.add(new int[] { nr, nc });
-                }
-            }
-        }
-        return sumOfIsland;
-    }
+    //             if (nr >= 0 && nc >= 0 && nr < m && nc < n && grid[nr][nc] != 0) {
+    //                 sumOfIsland += grid[nr][nc];
+    //                 grid[nr][nc] = 0;
+    //                 queue.add(new int[] { nr, nc });
+    //             }
+    //         }
+    //     }
+    //     return sumOfIsland;
+    // }
 }
