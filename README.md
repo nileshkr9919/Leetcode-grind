@@ -160,6 +160,7 @@ Collection of problems to crack SDE interviews.
 | [0133-clone-graph](https://github.com/nileshkr9919/Leetcode-grind/tree/main/0133-clone-graph/) | Medium |
 | [0207-course-schedule](https://github.com/nileshkr9919/Leetcode-grind/tree/main/0207-course-schedule/) | Medium |
 | [0210-course-schedule-ii](https://github.com/nileshkr9919/Leetcode-grind/tree/main/0210-course-schedule-ii/) | Medium |
+| [0684-redundant-connection](https://github.com/nileshkr9919/Leetcode-grind/tree/main/0684-redundant-connection/) | Medium |
 | [1971-find-if-path-exists-in-graph](https://github.com/nileshkr9919/Leetcode-grind/tree/main/1971-find-if-path-exists-in-graph/) | Easy |
 ## Breadth-First Search
 | Problem Name | Difficulty |
@@ -167,6 +168,7 @@ Collection of problems to crack SDE interviews.
 | [0133-clone-graph](https://github.com/nileshkr9919/Leetcode-grind/tree/main/0133-clone-graph/) | Medium |
 | [0207-course-schedule](https://github.com/nileshkr9919/Leetcode-grind/tree/main/0207-course-schedule/) | Medium |
 | [0210-course-schedule-ii](https://github.com/nileshkr9919/Leetcode-grind/tree/main/0210-course-schedule-ii/) | Medium |
+| [0684-redundant-connection](https://github.com/nileshkr9919/Leetcode-grind/tree/main/0684-redundant-connection/) | Medium |
 | [1971-find-if-path-exists-in-graph](https://github.com/nileshkr9919/Leetcode-grind/tree/main/1971-find-if-path-exists-in-graph/) | Easy |
 ## Graph Theory
 | Problem Name | Difficulty |
@@ -174,6 +176,7 @@ Collection of problems to crack SDE interviews.
 | [0133-clone-graph](https://github.com/nileshkr9919/Leetcode-grind/tree/main/0133-clone-graph/) | Medium |
 | [0207-course-schedule](https://github.com/nileshkr9919/Leetcode-grind/tree/main/0207-course-schedule/) | Medium |
 | [0210-course-schedule-ii](https://github.com/nileshkr9919/Leetcode-grind/tree/main/0210-course-schedule-ii/) | Medium |
+| [0684-redundant-connection](https://github.com/nileshkr9919/Leetcode-grind/tree/main/0684-redundant-connection/) | Medium |
 | [1971-find-if-path-exists-in-graph](https://github.com/nileshkr9919/Leetcode-grind/tree/main/1971-find-if-path-exists-in-graph/) | Easy |
 ## Topological Sort
 | Problem Name | Difficulty |
@@ -183,5 +186,6 @@ Collection of problems to crack SDE interviews.
 ## Union-Find
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0684-redundant-connection](https://github.com/nileshkr9919/Leetcode-grind/tree/main/0684-redundant-connection/) | Medium |
 | [1971-find-if-path-exists-in-graph](https://github.com/nileshkr9919/Leetcode-grind/tree/main/1971-find-if-path-exists-in-graph/) | Easy |
 <!---LeetCode Topics End-->
