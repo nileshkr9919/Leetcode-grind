@@ -39,13 +39,13 @@ class Solution {
             return false;
         }
         if (rank[px] < rank[py]) {
-            int t = px;
-            px = py;
-            py = t;
-        }
-        parent[py] = px;
-        if (rank[px] == rank[py])
+            parent[px] = py;
+        } else if(rank[py] < rank[px]) {
+            parent[py] = px;
+        } else {
+            parent[py] = px;
             rank[px]++;
+        }
         return true;
     }
 }
