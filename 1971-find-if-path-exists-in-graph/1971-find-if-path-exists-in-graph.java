@@ -1,8 +1,5 @@
 class Solution {
     public boolean validPath(int n, int[][] edges, int source, int destination) {
-        if (source == destination)
-            return true;
-
         List<List<Integer>> graph = new ArrayList<>();
 
         for (int i = 0; i < n; i++) {
@@ -23,6 +20,7 @@ class Solution {
     }
 
     private boolean dfs(List<List<Integer>> graph, int src, int dest, boolean[] visited) {
+        if (src == dest) return true;
         List<Integer> neighbors = graph.get(src);
         visited[src] = true;
 
