@@ -25,9 +25,6 @@ class Solution {
         visited[src] = true;
 
         for (int n : neighbors) {
-            if (n == dest) {
-                return true;
-            }
             if (!visited[n]) {
                 if (dfs(graph, n, dest, visited))
                     return true;
