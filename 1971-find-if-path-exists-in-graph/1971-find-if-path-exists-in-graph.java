@@ -17,8 +17,6 @@ class Solution {
             graph.get(v).add(u);
         }
 
-        System.out.println(graph);
-
         boolean[] visited = new boolean[n];
 
         return dfs(graph, source, destination, visited);
