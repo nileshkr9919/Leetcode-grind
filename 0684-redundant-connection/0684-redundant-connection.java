@@ -1,41 +1,51 @@
 class Solution {
-    public int[] findRedundantConnection(int[][] edges) {
-        List<List<Integer>> graph = new ArrayList<>();
+    int[] parent;
+    int[] rank;
 
-        for (int i = 0; i <= edges.length; i++) {
-            graph.add(new ArrayList<Integer>());
-        }
+    public int[] findRedundantConnection(int[][] edges) {
+        init(edges.length + 1);
 
         for (int[] edge : edges) {
             int u = edge[0];
             int v = edge[1];
 
-            graph.get(u).add(v);
-            graph.get(v).add(u);
-
-            boolean[] visited = new boolean[edges.length + 1];
-
-            if (dfs(graph, u, -1, visited)) {
+            if (!union(u, v)) {
                 return edge;
             }
         }
 
-        return new int[0];
+        return new int[] {};
     }
 
-    private boolean dfs(List<List<Integer>> graph, int src, int dest, boolean[] visited) {
-        if (visited[src])
-            return true;
-        visited[src] = true;
+    public void init(int n) {
+        this.parent = new int[n];
+        this.rank = new int[n];
 
-        for (int n : graph.get(src)) {
-            if (n == dest) {
-                continue;
-            }
-            if (dfs(graph, n, src, visited))
-                return true;
+        for (int i = 0; i < n; i++)
+            parent[i] = i;
+    }
+
+    public int find(int x) {
+        if (parent[x] != x)
+            parent[x] = find(parent[x]);
+
+        return parent[x];
+    }
+
+    public boolean union(int u, int v) {
+        int px = find(u);
+        int py = find(v);
+        if (px == py) {
+            return false;
         }
-
-        return false;
+        if (rank[px] < rank[py]) {
+            int t = px;
+            px = py;
+            py = t;
+        }
+        parent[py] = px;
+        if (rank[px] == rank[py])
+            rank[px]++;
+        return true;
     }
 }
