@@ -27,8 +27,6 @@ class Solution {
         int[] colDir = new int[] { -1, 1, 0, 0 };
 
         while (!queue.isEmpty()) {
-            int size = queue.size();
-
             int[] cell = queue.poll();
 
             int r = cell[0];
