@@ -3,52 +3,63 @@ class Solution {
     int[] colDir = { 0, 0, -1, 1 };
 
     public List<List<Integer>> pacificAtlantic(int[][] heights) {
-        int m = heights.length, n = heights[0].length;
-        boolean[][] pacific = new boolean[m][n];
-        boolean[][] atlantic = new boolean[m][n];
+        // Pattern matched: Flow problem - Reverse traversal
 
-        Deque<int[]> pacQueue = new LinkedList<>();
-        Deque<int[]> atlQueue = new LinkedList<>();
+        int m = heights.length;
+        int n = heights[0].length;
+
+        Deque<int[]> pacificCells = new ArrayDeque<>();
+        Deque<int[]> atlanticCells = new ArrayDeque<>();
+
+        boolean[][] pacificVisited = new boolean[m][n];
+        boolean[][] atlanticVisited = new boolean[m][n];
 
         for (int i = 0; i < m; i++) {
-            pacQueue.add(new int[] { i, 0 });
-            pacific[i][0] = true;
-            atlQueue.add(new int[] { i, n - 1 });
-            atlantic[i][n - 1] = true;
-        }
-        for (int j = 0; j < n; j++) {
-            pacQueue.add(new int[] { 0, j });
-            pacific[0][j] = true;
-            atlQueue.add(new int[] { m - 1, j });
-            atlantic[m - 1][j] = true;
+            pacificCells.add(new int[] { i, 0 });
+            pacificVisited[i][0] = true;
+            atlanticCells.add(new int[] { i, n - 1 });
+            atlanticVisited[i][n - 1] = true;
         }
 
-        bfs(heights, pacQueue, pacific);
-        bfs(heights, atlQueue, atlantic);
+        for (int i = 0; i < n; i++) {
+            pacificCells.add(new int[] { 0, i });
+            pacificVisited[0][i] = true;
+            atlanticCells.add(new int[] { m - 1, i });
+            atlanticVisited[m - 1][i] = true;
+        }
 
-        List<List<Integer>> result = new ArrayList<>();
-        for (int i = 0; i < m; i++)
-            for (int j = 0; j < n; j++)
-                if (pacific[i][j] && atlantic[i][j])
-                    result.add(Arrays.asList(i, j));
+        bfs(heights, pacificCells, pacificVisited);
+        bfs(heights, atlanticCells, atlanticVisited);
 
-        return result;
+        List<List<Integer>> res = new ArrayList<>();
+
+        for (int i = 0; i < m; i++) {
+            for (int j = 0; j < n; j++) {
+                if (pacificVisited[i][j] && atlanticVisited[i][j]) {
+                    res.add(Arrays.asList(i, j));
+                }
+            }
+        }
+
+        return res;
     }
 
-    private void bfs(int[][] heights, Deque<int[]> queue, boolean[][] visited) {
+    public void bfs(int[][] heights, Queue<int[]> queue, boolean[][] visited) {
         while (!queue.isEmpty()) {
-            int[] curr = queue.poll();
-            int r = curr[0];
-            int c = curr[1];
+            int[] cell = queue.poll();
+
+            int r = cell[0];
+            int c = cell[1];
 
             for (int dir = 0; dir < 4; dir++) {
                 int nr = r + rowDir[dir];
                 int nc = c + colDir[dir];
 
-                if (nr >= 0 && nr < heights.length && nc >= 0 && nc < heights[0].length
-                        && !visited[nr][nc] && heights[nr][nc] >= heights[r][c]) {
-                    visited[nr][nc] = true;
-                    queue.add(new int[] { nr, nc });
+                if (nr >= 0 && nc >= 0 && nr < heights.length && nc < heights[0].length && !visited[nr][nc]) {
+                    if (heights[nr][nc] >= heights[r][c]) {
+                        visited[nr][nc] = true;
+                        queue.add(new int[] { nr, nc });
+                    }
                 }
             }
         }
