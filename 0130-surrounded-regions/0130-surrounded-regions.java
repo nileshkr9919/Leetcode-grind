@@ -40,7 +40,7 @@ class Solution {
                 int nr = r + rowDir[dir];
                 int nc = c + colDir[dir];
 
-                if (nr > 0 && nr < m - 1 && nc > 0 && nc < n - 1 && board[nr][nc] == 'O') {
+                if (nr >= 0 && nr < m && nc >= 0 && nc < n && board[nr][nc] == 'O') {
                     board[nr][nc] = 'Z';
                     queue.add(new int[] { nr, nc });
                 }
