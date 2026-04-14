@@ -44,16 +44,14 @@ class Solution {
     // }
 
     private void bfs(Node node, HashMap<Node, Node> map) {
-        if (node == null || map.containsKey(node)) {
+        if (node == null) {
             return;
         }
 
         Deque<Node> queue = new LinkedList<>();
 
-        if (!map.containsKey(node)) {
-            Node copy = new Node(node.val);
-            map.put(node, copy);
-        }
+        Node copy = new Node(node.val);
+        map.put(node, copy);
 
         queue.add(node);
 
