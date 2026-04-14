@@ -28,7 +28,7 @@ class Solution {
     }
 
     private void dfs(Node node, HashMap<Node, Node> map) {
-        if (map.containsKey(node) || node == null) {
+        if (node == null || map.containsKey(node)) {
             return;
         }
 
