@@ -7,11 +7,6 @@ class Solution {
             int next = (startIndex + i + 1) % n;
             int prev = (startIndex - i - 1 + n) % n;
 
-            System.out.print(prev + "  -->  " + words[prev]);
-            System.out.print("    ========    ");
-            System.out.print(next + "  -->  " + words[next]);
-            System.out.println();
-
             if (words[next].equals(target) || words[prev].equals(target)) {
                 return i + 1;
             }
