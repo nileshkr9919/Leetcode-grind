@@ -1,35 +1,33 @@
 class Solution {
-    int[] rowDir = { -1, 1, 0, 0 };
-    int[] colDir = { 0, 0, -1, 1 };
+    private int[] rowDir = new int[] { 0, 0, -1, 1 };
+    private int[] colDir = new int[] { -1, 1, 0, 0 };
 
     public List<List<Integer>> pacificAtlantic(int[][] heights) {
-        // Pattern matched: Flow problem - Reverse traversal
-
         int m = heights.length;
         int n = heights[0].length;
 
-        Deque<int[]> pacificCells = new ArrayDeque<>();
-        Deque<int[]> atlanticCells = new ArrayDeque<>();
+        Queue<int[]> pacificCells = new LinkedList<>();
+        Queue<int[]> atlanticCells = new LinkedList<>();
 
         boolean[][] pacificVisited = new boolean[m][n];
         boolean[][] atlanticVisited = new boolean[m][n];
 
         for (int i = 0; i < m; i++) {
-            pacificCells.add(new int[] { i, 0 });
             pacificVisited[i][0] = true;
-            atlanticCells.add(new int[] { i, n - 1 });
+            pacificCells.add(new int[] { i, 0 });
             atlanticVisited[i][n - 1] = true;
+            atlanticCells.add(new int[] { i, n - 1 });
         }
 
-        for (int i = 0; i < n; i++) {
-            pacificCells.add(new int[] { 0, i });
-            pacificVisited[0][i] = true;
-            atlanticCells.add(new int[] { m - 1, i });
-            atlanticVisited[m - 1][i] = true;
+        for (int j = 0; j < n; j++) {
+            pacificVisited[0][j] = true;
+            pacificCells.add(new int[] { 0, j });
+            atlanticVisited[m - 1][j] = true;
+            atlanticCells.add(new int[] { m - 1, j });
         }
 
-        bfs(heights, pacificCells, pacificVisited);
-        bfs(heights, atlanticCells, atlanticVisited);
+        bfs(pacificCells, heights, pacificVisited);
+        bfs(atlanticCells, heights, atlanticVisited);
 
         List<List<Integer>> res = new ArrayList<>();
 
@@ -44,10 +42,9 @@ class Solution {
         return res;
     }
 
-    public void bfs(int[][] heights, Queue<int[]> queue, boolean[][] visited) {
+    private void bfs(Queue<int[]> queue, int[][] heights, boolean[][] visited) {
         while (!queue.isEmpty()) {
             int[] cell = queue.poll();
-
             int r = cell[0];
             int c = cell[1];
 
