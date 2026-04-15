@@ -2,61 +2,71 @@ class Solution {
     public int longestBalanced(String s) {
         int n = s.length();
         int totalZeros = 0;
-        for (char c : s.toCharArray())
+        for (char c : s.toCharArray()) {
             if (c == '0')
                 totalZeros++;
+        }
         int totalOnes = n - totalZeros;
 
-        Map<Integer, List<Integer>> positions = new HashMap<>();
-        positions.put(0, new ArrayList<>());
-        positions.get(0).add(-1);
+        int[] first = new int[2 * n + 5];
+        int[] last = new int[2 * n + 5];
+        Arrays.fill(first, -1);
+        Arrays.fill(last, -1);
 
         int balance = 0;
-        int maxLen = 0;
+        int offset = n + 2;
+        first[balance + offset] = -1;
 
         for (int i = 0; i < n; i++) {
-            balance += (s.charAt(i) == '0' ? 1 : -1);
+            if (s.charAt(i) == '0')
+                balance++;
+            else
+                balance--;
 
-            positions.computeIfAbsent(balance, k -> new ArrayList<>()).add(i);
+            if (first[balance + offset] == -1) {
+                first[balance + offset] = i;
+            }
+            last[balance + offset] = i;
+        }
 
-            // Check diff = 0
-            List<Integer> list0 = positions.get(balance);
-            int first = list0.get(0);
-            int len = i - first;
-            if (len % 2 == 0 && len > maxLen)
-                maxLen = len;
+        int maxLen = 0;
 
-            // Check diff = 2
-            List<Integer> list2 = positions.get(balance - 2);
-            if (list2 != null) {
-                // Need earliest that gives valid length
-                int maxPossible = 2 * totalOnes + 2;
-                for (int idx : list2) {
-                    len = i - idx;
-                    if (len > maxPossible)
-                        continue;
-                    if (len % 2 == 0) {
-                        int half = len / 2;
-                        if (totalOnes > half - 1 && len > maxLen) {
-                            maxLen = len;
-                        }
+        // Check all balances
+        for (int bal = -n; bal <= n; bal++) {
+            int idx = bal + offset;
+            if (first[idx] != -1 && last[idx] != -1) {
+                int len = last[idx] - first[idx];
+                if (len % 2 == 0 && len > maxLen) {
+                    maxLen = len;
+                }
+            }
+        }
+
+        // Check diff = 2
+        for (int bal = -n; bal <= n - 2; bal++) {
+            int idx1 = bal + offset;
+            int idx2 = bal + 2 + offset;
+            if (first[idx1] != -1 && last[idx2] != -1) {
+                int len = last[idx2] - first[idx1];
+                if (len % 2 == 0) {
+                    int half = len / 2;
+                    if (totalOnes > half - 1 && len > maxLen) {
+                        maxLen = len;
                     }
                 }
             }
+        }
 
-            // Check diff = -2
-            List<Integer> list_2 = positions.get(balance + 2);
-            if (list_2 != null) {
-                int maxPossible = 2 * totalZeros + 2;
-                for (int idx : list_2) {
-                    len = i - idx;
-                    if (len > maxPossible)
-                        continue;
-                    if (len % 2 == 0) {
-                        int half = len / 2;
-                        if (totalZeros > half - 1 && len > maxLen) {
-                            maxLen = len;
-                        }
+        // Check diff = -2
+        for (int bal = -n + 2; bal <= n; bal++) {
+            int idx1 = bal + offset;
+            int idx2 = bal - 2 + offset;
+            if (first[idx1] != -1 && last[idx2] != -1) {
+                int len = last[idx2] - first[idx1];
+                if (len % 2 == 0) {
+                    int half = len / 2;
+                    if (totalZeros > half - 1 && len > maxLen) {
+                        maxLen = len;
                     }
                 }
             }
