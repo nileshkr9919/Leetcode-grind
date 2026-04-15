@@ -35,8 +35,7 @@ class Solution {
             for (int j = 0; j < n; j++) {
                 if (board[i][j] == 'O') {
                     board[i][j] = 'X';
-                }
-                if (board[i][j] == 'Z') {
+                } else if (board[i][j] == 'Z') {
                     board[i][j] = 'O';
                 }
             }
