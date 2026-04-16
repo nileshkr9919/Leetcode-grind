@@ -161,6 +161,7 @@ Collection of problems to crack SDE interviews.
 | [0207-course-schedule](https://github.com/nileshkr9919/Leetcode-grind/tree/main/0207-course-schedule/) | Medium |
 | [0210-course-schedule-ii](https://github.com/nileshkr9919/Leetcode-grind/tree/main/0210-course-schedule-ii/) | Medium |
 | [0684-redundant-connection](https://github.com/nileshkr9919/Leetcode-grind/tree/main/0684-redundant-connection/) | Medium |
+| [0743-network-delay-time](https://github.com/nileshkr9919/Leetcode-grind/tree/main/0743-network-delay-time/) | Medium |
 | [1971-find-if-path-exists-in-graph](https://github.com/nileshkr9919/Leetcode-grind/tree/main/1971-find-if-path-exists-in-graph/) | Easy |
 ## Breadth-First Search
 | Problem Name | Difficulty |
@@ -169,6 +170,7 @@ Collection of problems to crack SDE interviews.
 | [0207-course-schedule](https://github.com/nileshkr9919/Leetcode-grind/tree/main/0207-course-schedule/) | Medium |
 | [0210-course-schedule-ii](https://github.com/nileshkr9919/Leetcode-grind/tree/main/0210-course-schedule-ii/) | Medium |
 | [0684-redundant-connection](https://github.com/nileshkr9919/Leetcode-grind/tree/main/0684-redundant-connection/) | Medium |
+| [0743-network-delay-time](https://github.com/nileshkr9919/Leetcode-grind/tree/main/0743-network-delay-time/) | Medium |
 | [1971-find-if-path-exists-in-graph](https://github.com/nileshkr9919/Leetcode-grind/tree/main/1971-find-if-path-exists-in-graph/) | Easy |
 ## Graph Theory
 | Problem Name | Difficulty |
@@ -177,6 +179,7 @@ Collection of problems to crack SDE interviews.
 | [0207-course-schedule](https://github.com/nileshkr9919/Leetcode-grind/tree/main/0207-course-schedule/) | Medium |
 | [0210-course-schedule-ii](https://github.com/nileshkr9919/Leetcode-grind/tree/main/0210-course-schedule-ii/) | Medium |
 | [0684-redundant-connection](https://github.com/nileshkr9919/Leetcode-grind/tree/main/0684-redundant-connection/) | Medium |
+| [0743-network-delay-time](https://github.com/nileshkr9919/Leetcode-grind/tree/main/0743-network-delay-time/) | Medium |
 | [1971-find-if-path-exists-in-graph](https://github.com/nileshkr9919/Leetcode-grind/tree/main/1971-find-if-path-exists-in-graph/) | Easy |
 ## Topological Sort
 | Problem Name | Difficulty |
@@ -188,4 +191,12 @@ Collection of problems to crack SDE interviews.
 | ------- | ------- |
 | [0684-redundant-connection](https://github.com/nileshkr9919/Leetcode-grind/tree/main/0684-redundant-connection/) | Medium |
 | [1971-find-if-path-exists-in-graph](https://github.com/nileshkr9919/Leetcode-grind/tree/main/1971-find-if-path-exists-in-graph/) | Easy |
+## Heap (Priority Queue)
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0743-network-delay-time](https://github.com/nileshkr9919/Leetcode-grind/tree/main/0743-network-delay-time/) | Medium |
+## Shortest Path
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0743-network-delay-time](https://github.com/nileshkr9919/Leetcode-grind/tree/main/0743-network-delay-time/) | Medium |
 <!---LeetCode Topics End-->
