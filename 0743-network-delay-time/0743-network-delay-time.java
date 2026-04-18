@@ -1,48 +1,51 @@
 class Solution {
     public int networkDelayTime(int[][] times, int n, int k) {
-        List<List<int[]>> graph = new ArrayList<>();
+        List<int[]>[] graph = new ArrayList[n + 1];
 
-        for (int i = 0; i <= n; i++) {
-            graph.add(new ArrayList<>());
-        }
+        for (int i = 0; i <= n; i++)
+            graph[i] = new ArrayList<>();
 
         for (int[] time : times) {
-            int u = time[0];
-            int v = time[1];
-            int w = time[2];
+            int u = time[0], v = time[1], w = time[2];
 
-            graph.get(u).add(new int[] { v, w });
+            graph[u].add(new int[] { v, w });
         }
 
-        PriorityQueue<int[]> pq = new PriorityQueue<>((a, b) -> a[0] - b[0]);
-        pq.offer(new int[] { 0, k });
-
-        int[] dist = new int[n+1];
+        int[] dist = new int[n + 1];
         Arrays.fill(dist, Integer.MAX_VALUE);
+
+        PriorityQueue<int[]> queue = new PriorityQueue<>((a, b) -> a[0] - b[0]);
+
+        queue.offer(new int[] { 0, k });
         dist[k] = 0;
 
-        while (!pq.isEmpty()) {
-            int[] curr = pq.poll();
+        while (!queue.isEmpty()) {
+            int[] curr = queue.poll();
+
             int cost = curr[0], node = curr[1];
 
-            if (cost > dist[node])
-                continue; // stale entry
+            if (cost > dist[node]) {
+                continue;
+            }
 
-            for (int[] nei : graph.get(node)) {
+            for (int[] nei : graph[node]) {
                 int nextCost = cost + nei[1];
+
                 if (nextCost < dist[nei[0]]) {
                     dist[nei[0]] = nextCost;
-                    pq.offer(new int[] { nextCost, nei[0] });
+                    queue.offer(new int[] { nextCost, nei[0] });
                 }
             }
         }
 
-        int maxDist = 0;
+        int maxCost = Integer.MIN_VALUE;
+
         for (int i = 1; i <= n; i++) {
             if (dist[i] == Integer.MAX_VALUE)
-                return -1; // unreachable node
-            maxDist = Math.max(maxDist, dist[i]);
+                return -1;
+            maxCost = Math.max(maxCost, dist[i]);
         }
-        return maxDist;
+
+        return maxCost;
     }
 }
