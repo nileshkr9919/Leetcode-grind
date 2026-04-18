@@ -1,27 +1,32 @@
 class Solution {
-    private Map<String, String> parent; // email -> parent email
-    private Map<String, String> owner; // email -> account name
+    Map<String, String> parent; // email -> parent email
+    Map<String, String> owner; // email -> owner
 
-    public void init() {
+    private void init() {
         this.parent = new HashMap<>();
         this.owner = new HashMap<>();
     }
 
-    public String find(String email) {
-        if (!parent.containsKey(email))
-            parent.put(email, email);
-        if (!parent.get(email).equals(email))
-            parent.put(email, find(parent.get(email)));
-        return parent.get(email);
+    private String find(String x) {
+        if (!parent.containsKey(x)) {
+            parent.put(x, x);
+        }
+        if (!parent.get(x).equals(x)) {
+            parent.put(x, find(parent.get(x)));
+        }
+        return parent.get(x);
     }
 
-    public boolean union(String u, String v) {
-        String px = find(u);
-        String py = find(v);
-        if (px.equals(py)) {
+    private boolean union(String email1, String email2) {
+        String parent1 = find(email1);
+        String parent2 = find(email2);
+
+        if (parent1.equals(parent2)) {
             return false;
         }
-        parent.put(px, py);
+
+        parent.put(parent2, parent1);
+
         return true;
     }
 
@@ -32,31 +37,34 @@ class Solution {
             String firstEmail = account.get(1);
 
             for (int i = 1; i < account.size(); i++) {
-                String email = account.get(i);
-                this.owner.put(account.get(i), name);
-
-                if (!parent.containsKey(email))
-                    parent.put(email, email);
-
-                union(firstEmail, email);
+                union(firstEmail, account.get(i));
+                owner.put(firstEmail, name);
             }
         }
 
         Map<String, List<String>> groups = new HashMap<>();
 
-        for (String email : parent.keySet()) {
-            String root = find(email);
-            groups.computeIfAbsent(root, x -> new ArrayList<>()).add(email);
+        for (String key : parent.keySet()) {
+            String primaryEmail = parent.get(key);
+            if (!groups.containsKey(primaryEmail)) {
+                groups.put(primaryEmail, new ArrayList<>());
+            }
+            groups.get(primaryEmail).add(key);
         }
 
-        List<List<String>> result = new ArrayList<>();
+        List<List<String>> res = new ArrayList<>();
+
         for (Map.Entry<String, List<String>> entry : groups.entrySet()) {
+            List<String> item = new ArrayList();
+            item.add(owner.get(entry.getKey()));
             List<String> emails = entry.getValue();
             Collections.sort(emails);
-            emails.add(0, owner.get(entry.getKey()));
-            result.add(emails);
+            for (String val : emails) {
+                item.add(val);
+            }
+            res.add(item);
         }
 
-        return result;
+        return res;
     }
 }
