@@ -38,14 +38,15 @@ class Solution {
 
             for (int i = 1; i < account.size(); i++) {
                 union(firstEmail, account.get(i));
-                owner.put(firstEmail, name);
+                owner.put(account.get(i), name);
+
             }
         }
 
         Map<String, List<String>> groups = new HashMap<>();
 
         for (String key : parent.keySet()) {
-            String primaryEmail = parent.get(key);
+            String primaryEmail = find(key);
             if (!groups.containsKey(primaryEmail)) {
                 groups.put(primaryEmail, new ArrayList<>());
             }
