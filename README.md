@@ -163,6 +163,7 @@ Collection of problems to crack SDE interviews.
 | [0547-number-of-provinces](https://github.com/nileshkr9919/Leetcode-grind/tree/main/0547-number-of-provinces/) | Medium |
 | [0684-redundant-connection](https://github.com/nileshkr9919/Leetcode-grind/tree/main/0684-redundant-connection/) | Medium |
 | [0743-network-delay-time](https://github.com/nileshkr9919/Leetcode-grind/tree/main/0743-network-delay-time/) | Medium |
+| [0785-is-graph-bipartite](https://github.com/nileshkr9919/Leetcode-grind/tree/main/0785-is-graph-bipartite/) | Medium |
 | [1971-find-if-path-exists-in-graph](https://github.com/nileshkr9919/Leetcode-grind/tree/main/1971-find-if-path-exists-in-graph/) | Easy |
 ## Breadth-First Search
 | Problem Name | Difficulty |
@@ -173,6 +174,7 @@ Collection of problems to crack SDE interviews.
 | [0547-number-of-provinces](https://github.com/nileshkr9919/Leetcode-grind/tree/main/0547-number-of-provinces/) | Medium |
 | [0684-redundant-connection](https://github.com/nileshkr9919/Leetcode-grind/tree/main/0684-redundant-connection/) | Medium |
 | [0743-network-delay-time](https://github.com/nileshkr9919/Leetcode-grind/tree/main/0743-network-delay-time/) | Medium |
+| [0785-is-graph-bipartite](https://github.com/nileshkr9919/Leetcode-grind/tree/main/0785-is-graph-bipartite/) | Medium |
 | [1971-find-if-path-exists-in-graph](https://github.com/nileshkr9919/Leetcode-grind/tree/main/1971-find-if-path-exists-in-graph/) | Easy |
 ## Graph Theory
 | Problem Name | Difficulty |
@@ -183,6 +185,7 @@ Collection of problems to crack SDE interviews.
 | [0547-number-of-provinces](https://github.com/nileshkr9919/Leetcode-grind/tree/main/0547-number-of-provinces/) | Medium |
 | [0684-redundant-connection](https://github.com/nileshkr9919/Leetcode-grind/tree/main/0684-redundant-connection/) | Medium |
 | [0743-network-delay-time](https://github.com/nileshkr9919/Leetcode-grind/tree/main/0743-network-delay-time/) | Medium |
+| [0785-is-graph-bipartite](https://github.com/nileshkr9919/Leetcode-grind/tree/main/0785-is-graph-bipartite/) | Medium |
 | [1971-find-if-path-exists-in-graph](https://github.com/nileshkr9919/Leetcode-grind/tree/main/1971-find-if-path-exists-in-graph/) | Easy |
 ## Topological Sort
 | Problem Name | Difficulty |
@@ -194,6 +197,7 @@ Collection of problems to crack SDE interviews.
 | ------- | ------- |
 | [0547-number-of-provinces](https://github.com/nileshkr9919/Leetcode-grind/tree/main/0547-number-of-provinces/) | Medium |
 | [0684-redundant-connection](https://github.com/nileshkr9919/Leetcode-grind/tree/main/0684-redundant-connection/) | Medium |
+| [0785-is-graph-bipartite](https://github.com/nileshkr9919/Leetcode-grind/tree/main/0785-is-graph-bipartite/) | Medium |
 | [1971-find-if-path-exists-in-graph](https://github.com/nileshkr9919/Leetcode-grind/tree/main/1971-find-if-path-exists-in-graph/) | Easy |
 ## Heap (Priority Queue)
 | Problem Name | Difficulty |
