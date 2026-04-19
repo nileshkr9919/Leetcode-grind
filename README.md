@@ -160,6 +160,7 @@ Collection of problems to crack SDE interviews.
 | [0133-clone-graph](https://github.com/nileshkr9919/Leetcode-grind/tree/main/0133-clone-graph/) | Medium |
 | [0207-course-schedule](https://github.com/nileshkr9919/Leetcode-grind/tree/main/0207-course-schedule/) | Medium |
 | [0210-course-schedule-ii](https://github.com/nileshkr9919/Leetcode-grind/tree/main/0210-course-schedule-ii/) | Medium |
+| [0547-number-of-provinces](https://github.com/nileshkr9919/Leetcode-grind/tree/main/0547-number-of-provinces/) | Medium |
 | [0684-redundant-connection](https://github.com/nileshkr9919/Leetcode-grind/tree/main/0684-redundant-connection/) | Medium |
 | [0743-network-delay-time](https://github.com/nileshkr9919/Leetcode-grind/tree/main/0743-network-delay-time/) | Medium |
 | [1971-find-if-path-exists-in-graph](https://github.com/nileshkr9919/Leetcode-grind/tree/main/1971-find-if-path-exists-in-graph/) | Easy |
@@ -169,6 +170,7 @@ Collection of problems to crack SDE interviews.
 | [0133-clone-graph](https://github.com/nileshkr9919/Leetcode-grind/tree/main/0133-clone-graph/) | Medium |
 | [0207-course-schedule](https://github.com/nileshkr9919/Leetcode-grind/tree/main/0207-course-schedule/) | Medium |
 | [0210-course-schedule-ii](https://github.com/nileshkr9919/Leetcode-grind/tree/main/0210-course-schedule-ii/) | Medium |
+| [0547-number-of-provinces](https://github.com/nileshkr9919/Leetcode-grind/tree/main/0547-number-of-provinces/) | Medium |
 | [0684-redundant-connection](https://github.com/nileshkr9919/Leetcode-grind/tree/main/0684-redundant-connection/) | Medium |
 | [0743-network-delay-time](https://github.com/nileshkr9919/Leetcode-grind/tree/main/0743-network-delay-time/) | Medium |
 | [1971-find-if-path-exists-in-graph](https://github.com/nileshkr9919/Leetcode-grind/tree/main/1971-find-if-path-exists-in-graph/) | Easy |
@@ -178,6 +180,7 @@ Collection of problems to crack SDE interviews.
 | [0133-clone-graph](https://github.com/nileshkr9919/Leetcode-grind/tree/main/0133-clone-graph/) | Medium |
 | [0207-course-schedule](https://github.com/nileshkr9919/Leetcode-grind/tree/main/0207-course-schedule/) | Medium |
 | [0210-course-schedule-ii](https://github.com/nileshkr9919/Leetcode-grind/tree/main/0210-course-schedule-ii/) | Medium |
+| [0547-number-of-provinces](https://github.com/nileshkr9919/Leetcode-grind/tree/main/0547-number-of-provinces/) | Medium |
 | [0684-redundant-connection](https://github.com/nileshkr9919/Leetcode-grind/tree/main/0684-redundant-connection/) | Medium |
 | [0743-network-delay-time](https://github.com/nileshkr9919/Leetcode-grind/tree/main/0743-network-delay-time/) | Medium |
 | [1971-find-if-path-exists-in-graph](https://github.com/nileshkr9919/Leetcode-grind/tree/main/1971-find-if-path-exists-in-graph/) | Easy |
@@ -189,6 +192,7 @@ Collection of problems to crack SDE interviews.
 ## Union-Find
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0547-number-of-provinces](https://github.com/nileshkr9919/Leetcode-grind/tree/main/0547-number-of-provinces/) | Medium |
 | [0684-redundant-connection](https://github.com/nileshkr9919/Leetcode-grind/tree/main/0684-redundant-connection/) | Medium |
 | [1971-find-if-path-exists-in-graph](https://github.com/nileshkr9919/Leetcode-grind/tree/main/1971-find-if-path-exists-in-graph/) | Easy |
 ## Heap (Priority Queue)
