@@ -6,47 +6,48 @@ class Solution {
             graph.add(new ArrayList<>());
         }
 
-        for (int[] prerequisite : prerequisites) {
-            graph.get(prerequisite[1]).add(prerequisite[0]);
+        for (int[] preq : prerequisites) {
+            int u = preq[0];
+            int v = preq[1];
+
+            graph.get(v).add(u);
         }
 
         int[] state = new int[numCourses];
-        List<Integer> result = new ArrayList<>();
+        List<Integer> res = new ArrayList<>();
 
         for (int i = 0; i < numCourses; i++) {
-            if (dfs(graph, i, state, result)) {
-                return new int[0];
+            if (!dfs(graph, i, state, res)) {
+                return new int[] {};
             }
         }
 
-        Collections.reverse(result);
+        Collections.reverse(res);
 
         int[] ans = new int[numCourses];
         for (int i = 0; i < numCourses; i++) {
-            ans[i] = result.get(i);
+            ans[i] = res.get(i);
         }
 
         return ans;
     }
 
-    private boolean dfs(List<List<Integer>> graph, int i, int[] state, List<Integer> result) {
-        if (state[i] == 1) {
+    private boolean dfs(List<List<Integer>> graph, int course, int[] state, List<Integer> res) {
+        if (state[course] == 2) {
             return true;
         }
-        if (state[i] == 2) {
+        if (state[course] == 1) {
             return false;
         }
-        state[i] = 1;
+        state[course] = 1;
 
-        List<Integer> neighbors = graph.get(i);
-        for (int dep : neighbors) {
-            if (dfs(graph, dep, state, result)) {
-                return true;
+        for (int nei : graph.get(course)) {
+            if (!dfs(graph, nei, state, res)) {
+                return false;
             }
         }
-
-        state[i] = 2;
-        result.add(i);
-        return false;
+        state[course] = 2;
+        res.add(course);
+        return true;
     }
 }
