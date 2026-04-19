@@ -164,6 +164,7 @@ Collection of problems to crack SDE interviews.
 | [0684-redundant-connection](https://github.com/nileshkr9919/Leetcode-grind/tree/main/0684-redundant-connection/) | Medium |
 | [0743-network-delay-time](https://github.com/nileshkr9919/Leetcode-grind/tree/main/0743-network-delay-time/) | Medium |
 | [0785-is-graph-bipartite](https://github.com/nileshkr9919/Leetcode-grind/tree/main/0785-is-graph-bipartite/) | Medium |
+| [0797-all-paths-from-source-to-target](https://github.com/nileshkr9919/Leetcode-grind/tree/main/0797-all-paths-from-source-to-target/) | Medium |
 | [0802-find-eventual-safe-states](https://github.com/nileshkr9919/Leetcode-grind/tree/main/0802-find-eventual-safe-states/) | Medium |
 | [1971-find-if-path-exists-in-graph](https://github.com/nileshkr9919/Leetcode-grind/tree/main/1971-find-if-path-exists-in-graph/) | Easy |
 ## Breadth-First Search
@@ -176,6 +177,7 @@ Collection of problems to crack SDE interviews.
 | [0684-redundant-connection](https://github.com/nileshkr9919/Leetcode-grind/tree/main/0684-redundant-connection/) | Medium |
 | [0743-network-delay-time](https://github.com/nileshkr9919/Leetcode-grind/tree/main/0743-network-delay-time/) | Medium |
 | [0785-is-graph-bipartite](https://github.com/nileshkr9919/Leetcode-grind/tree/main/0785-is-graph-bipartite/) | Medium |
+| [0797-all-paths-from-source-to-target](https://github.com/nileshkr9919/Leetcode-grind/tree/main/0797-all-paths-from-source-to-target/) | Medium |
 | [0802-find-eventual-safe-states](https://github.com/nileshkr9919/Leetcode-grind/tree/main/0802-find-eventual-safe-states/) | Medium |
 | [1971-find-if-path-exists-in-graph](https://github.com/nileshkr9919/Leetcode-grind/tree/main/1971-find-if-path-exists-in-graph/) | Easy |
 ## Graph Theory
@@ -188,6 +190,7 @@ Collection of problems to crack SDE interviews.
 | [0684-redundant-connection](https://github.com/nileshkr9919/Leetcode-grind/tree/main/0684-redundant-connection/) | Medium |
 | [0743-network-delay-time](https://github.com/nileshkr9919/Leetcode-grind/tree/main/0743-network-delay-time/) | Medium |
 | [0785-is-graph-bipartite](https://github.com/nileshkr9919/Leetcode-grind/tree/main/0785-is-graph-bipartite/) | Medium |
+| [0797-all-paths-from-source-to-target](https://github.com/nileshkr9919/Leetcode-grind/tree/main/0797-all-paths-from-source-to-target/) | Medium |
 | [0802-find-eventual-safe-states](https://github.com/nileshkr9919/Leetcode-grind/tree/main/0802-find-eventual-safe-states/) | Medium |
 | [1971-find-if-path-exists-in-graph](https://github.com/nileshkr9919/Leetcode-grind/tree/main/1971-find-if-path-exists-in-graph/) | Easy |
 ## Topological Sort
@@ -211,4 +214,8 @@ Collection of problems to crack SDE interviews.
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0743-network-delay-time](https://github.com/nileshkr9919/Leetcode-grind/tree/main/0743-network-delay-time/) | Medium |
+## Backtracking
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0797-all-paths-from-source-to-target](https://github.com/nileshkr9919/Leetcode-grind/tree/main/0797-all-paths-from-source-to-target/) | Medium |
 <!---LeetCode Topics End-->
