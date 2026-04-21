@@ -22,6 +22,6 @@ class Solution {
 
         }
 
-        return k == 0 ? maxFreq : maxLen;
+        return maxLen;
     }
 }
