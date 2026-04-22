@@ -1,13 +1,16 @@
+import java.util.HashMap;
+
 class Solution {
     public String minWindow(String s, String t) {
         HashMap<Character, Integer> tFreq = new HashMap<>();
+
         for (char ch : t.toCharArray()) {
             tFreq.put(ch, tFreq.getOrDefault(ch, 0) + 1);
         }
 
-        int need = tFreq.size(), have = 0, left = 0;
+        int need = tFreq.size(), have = 0;
         int[] res = new int[] { -1, -1 };
-        int minLen = Integer.MAX_VALUE;
+        int left = 0, minLen = Integer.MAX_VALUE;
         HashMap<Character, Integer> sFreq = new HashMap<>();
 
         for (int right = 0; right < s.length(); right++) {
@@ -20,7 +23,7 @@ class Solution {
 
             while (have == need) {
                 if (right - left + 1 < minLen) {
-                    minLen = Math.min(minLen, right - left + 1);
+                    minLen = right - left + 1;
                     res[0] = left;
                     res[1] = right;
                 }
