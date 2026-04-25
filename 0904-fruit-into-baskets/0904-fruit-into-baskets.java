@@ -1,17 +1,16 @@
 class Solution {
     public int totalFruit(int[] fruits) {
-        int left = 0, maxLen = 0;
         HashMap<Integer, Integer> map = new HashMap<>();
+        int left = 0, maxLen = 0;
 
         for (int right = 0; right < fruits.length; right++) {
-            int fruitType = fruits[right];
-            map.put(fruitType, map.getOrDefault(fruitType, 0) + 1);
+            int type = fruits[right];
+            map.put(type, map.getOrDefault(type, 0) + 1);
 
             while (map.size() > 2) {
-                int leftFruitType = fruits[left];
-                map.put(leftFruitType, map.get(leftFruitType) - 1);
-                if(map.get(leftFruitType) == 0) {
-                    map.remove(leftFruitType);
+                map.put(fruits[left], map.get(fruits[left]) - 1);
+                if (map.get(fruits[left]) == 0) {
+                    map.remove(fruits[left]);
                 }
                 left++;
             }
