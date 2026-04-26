@@ -18,11 +18,7 @@ class Solution {
     private boolean dfs(char[][] grid, int i, int j, int prevRow, int prevCol, boolean[][] visited) {
         if (i >= 0 && i < grid.length && j >= 0 && j < grid[0].length) {
             if (visited[i][j]) {
-                if (prevRow != -1 && prevCol != -1 && grid[i][j] == grid[prevRow][prevCol]) {
-                    return true;
-                } else {
-                    return false;
-                }
+                return true;
             }
         } else {
             return false;
