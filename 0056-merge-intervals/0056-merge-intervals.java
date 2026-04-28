@@ -12,7 +12,7 @@ class Solution {
         for (int i = 1; i < intervals.length; i++) {
             int[] interval = intervals[i];
 
-            if (interval[0] <= currentInterval[1] || currentInterval[1] >= interval[1]) {
+            if (interval[0] <= currentInterval[1]) {
                 currentInterval[1] = Math.max(interval[1], currentInterval[1]);
             } else {
                 res.add(currentInterval);
