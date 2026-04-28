@@ -22,12 +22,6 @@ class Solution {
 
         res.add(currentInterval);
 
-        int[][] arr = new int[res.size()][2];
-
-        for (int i = 0; i < res.size(); i++) {
-            arr[i] = res.get(i);
-        }
-
-        return arr;
+        return res.toArray(new int[res.size()][]);
     }
 }
