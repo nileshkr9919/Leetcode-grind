@@ -5,7 +5,7 @@ class Solution {
         int[] currentInterval = intervals[0];
         int count = 0;
 
-        for (int i = 0; i < intervals.length; i++) {
+        for (int i = 1; i < intervals.length; i++) {
             int[] interval = intervals[i];
 
             if (interval[0] < currentInterval[1]) {
@@ -15,6 +15,6 @@ class Solution {
             }
         }
 
-        return count - 1;
+        return count;
     }
 }
