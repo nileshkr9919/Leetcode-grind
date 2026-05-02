@@ -1,15 +1,15 @@
 class Solution {
     public int leastInterval(char[] tasks, int n) {
-        int maxFreq = 0, maxCount = 0;
         Map<Character, Integer> map = new HashMap<>();
+
+        int maxFreq = 0, maxCount = 0;
 
         for (char ch : tasks) {
             map.put(ch, map.getOrDefault(ch, 0) + 1);
-            if (map.get(ch) > maxFreq) {
-                maxFreq = map.get(ch);
-                maxCount = 1;
-            } else if (map.get(ch) == maxFreq) {
+            if (maxFreq == map.get(ch)) {
                 maxCount++;
+            } else if(map.get(ch) > maxFreq) {
+                maxCount = 1;
             }
             maxFreq = Math.max(maxFreq, map.get(ch));
         }
