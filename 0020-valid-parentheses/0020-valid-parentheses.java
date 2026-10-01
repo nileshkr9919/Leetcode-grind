@@ -1,13 +1,13 @@
 class Solution {
     public boolean isValid(String s) {
-        Deque<Character> st = new ArrayDeque<>();
-        HashMap<Character, Character> map = new HashMap();
+        Map<Character, Character> map = new HashMap<>();
+        Stack<Character> st = new Stack<>();
 
         map.put(')', '(');
         map.put('}', '{');
         map.put(']', '[');
 
-        for (Character ch : s.toCharArray()) {
+        for (char ch : s.toCharArray()) {
             if (!map.containsKey(ch)) {
                 st.push(ch);
             } else {
@@ -19,5 +19,6 @@ class Solution {
         }
 
         return st.isEmpty();
+
     }
 }
