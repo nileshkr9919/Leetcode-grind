@@ -1,8 +1,8 @@
 class Solution {
     public boolean isValid(String s) {
         Map<Character, Character> map = new HashMap<>();
-        Stack<Character> st = new Stack<>();
-
+        Deque<Character> st = new ArrayDeque<>();
+        
         map.put(')', '(');
         map.put('}', '{');
         map.put(']', '[');
