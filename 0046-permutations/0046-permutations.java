@@ -9,6 +9,7 @@ class Solution {
     private void backtrack(int[] nums, boolean[] used, List<Integer> current, List<List<Integer>> res) {
         if(current.size() == nums.length) {
             res.add(new ArrayList<Integer>(current));
+            return;
         }
 
         for (int i = 0; i < nums.length; i++) {
